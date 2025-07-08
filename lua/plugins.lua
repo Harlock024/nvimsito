@@ -53,6 +53,12 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'                      
   use 'lewis6991/gitsigns.nvim'                
   use { "akinsho/toggleterm.nvim", tag = '*' } 
-  use 'folke/todo-comments.nvim'                
+  use 'folke/todo-comments.nvim'
+
+  use {
+	"jose-elias-alvarez/null-ls.nvim",
+  	requires = { "nvim-lua/plenary.nvim" }
+}	
+
 end)
 
