@@ -58,7 +58,18 @@ return require('packer').startup(function(use)
   use {
 	"jose-elias-alvarez/null-ls.nvim",
   	requires = { "nvim-lua/plenary.nvim" }
-}	
+	}
+	
+  use 'romgrk/barbar.nvim'
+	
+  use {
+  'goolord/alpha-nvim',
+  requires = { 'nvim-tree/nvim-web-devicons' },
+  config = function()
+    require("alpha").setup(require("alpha.themes.dashboard").config)
+  end
+}
+
 
 end)
 

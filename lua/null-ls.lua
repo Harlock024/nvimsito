@@ -5,12 +5,13 @@ null_ls.setup({
     -- Linters
     null_ls.builtins.diagnostics.eslint,         -- para JS/TS con eslint
     null_ls.builtins.diagnostics.flake8,          -- para Python con flake8
-    null_ls.builtins.diagnostics.ziglint,         -- para Zig si tienes un linter compatible
-
+    null_ls.builtins.diagnostics.ziglint, 	-- para Zig si tienes un linter compatible
+    null_ls.builtins.diagnostics.golangci_lint,
     -- Formateadores
     null_ls.builtins.formatting.prettier,         -- JS/TS
     null_ls.builtins.formatting.black,            -- Python
     null_ls.builtins.formatting.zigfmt,           -- Zig
+    null_ls.builtins.formatting.gofmt,
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then

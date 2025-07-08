@@ -4,7 +4,7 @@ local M = {}
 function M.setup()
   require("mason").setup()
   require("mason-lspconfig").setup({
-    ensure_installed = { "pyright", "clangd", "rust_analyzer","zls" },
+    ensure_installed = { "pyright", "clangd", "rust_analyzer","zls","gopls" },
     automatic_installation = true,
   })
 

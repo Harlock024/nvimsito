@@ -2,6 +2,10 @@ require("plugins")
 require("cmp-config")
 require("autopairs-config")
 
+require("tree")
+
+require("keymaps")
+
 require('lsp').setup()
 
 
@@ -15,3 +19,7 @@ vim.diagnostic.config({
 
 vim.cmd([[colorscheme lackluster-hack]])
 vim.opt.clipboard:append("unnamedplus")
+
+
+
+
