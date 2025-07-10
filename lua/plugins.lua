@@ -61,12 +61,26 @@ return require('packer').startup(function(use)
 	}
 	
   use 'romgrk/barbar.nvim'
-	
+
   use {
-  'goolord/alpha-nvim',
-  requires = { 'nvim-tree/nvim-web-devicons' },
-  config = function()
+  '	goolord/alpha-nvim',
+        requires = { 'nvim-tree/nvim-web-devicons' },
+  	config = function()
     require("alpha").setup(require("alpha.themes.dashboard").config)
+   end
+ }
+ use {
+  'numToStr/Comment.nvim',
+  config = function()
+    require('Comment').setup()
+  end
+}
+
+use {
+  "akinsho/toggleterm.nvim",
+  version = "*",
+  config = function()
+    require("toggleterm").setup()
   end
 }
 

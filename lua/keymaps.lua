@@ -18,3 +18,8 @@ map("n", "<leader>bd", ":bdelete<CR>", "close actual buffer")
 -- Telescope
 map("n", "<leader>ff" , ":Telescope find_files<CR>","search files")
 map("n", "<leader>fg" , ":Telescope live_grep<CR>","search text")
+
+-- Terminal Toggle
+
+map("n", "<leader>t", "<cmd>ToggleTerm direction=horizontal<CR>",  "Toggle terminal (normal)")
+

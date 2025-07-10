@@ -1,7 +1,7 @@
 require("plugins")
 require("cmp-config")
 require("autopairs-config")
-
+require("terminal");
 require("tree")
 
 require("keymaps")
