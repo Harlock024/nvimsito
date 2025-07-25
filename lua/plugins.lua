@@ -52,7 +52,6 @@ return require('packer').startup(function(use)
 
   use 'tpope/vim-fugitive'                      
   use 'lewis6991/gitsigns.nvim'                
-  use { "akinsho/toggleterm.nvim", tag = '*' } 
   use 'folke/todo-comments.nvim'
 
   use {
@@ -62,13 +61,6 @@ return require('packer').startup(function(use)
 	
   use 'romgrk/barbar.nvim'
 
-  use {
-  '	goolord/alpha-nvim',
-        requires = { 'nvim-tree/nvim-web-devicons' },
-  	config = function()
-    require("alpha").setup(require("alpha.themes.dashboard").config)
-   end
- }
  use {
   'numToStr/Comment.nvim',
   config = function()
@@ -84,6 +76,13 @@ use {
   end
 }
 
+use {
+    'goolord/alpha-nvim',
+    requires = { 'echasnovski/mini.icons' },
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    end
+}
 
 end)
 
