@@ -19,7 +19,11 @@ map("n", "<leader>c", ":bdelete<CR>", "close actual buffer")
 map("n", "<leader>ff" , ":Telescope find_files<CR>","search files")
 map("n", "<leader>fg" , ":Telescope live_grep<CR>","search text")
 
+map("n", "gd",":Telescope lsp_definitions<CR>","redirect file")
+
 -- Terminal Toggle
 
 map("n", "<leader>t", "<cmd>ToggleTerm direction=horizontal<CR>",  "Toggle terminal (normal)")
+
+map('n', '<leader>d', vim.diagnostic.open_float, 'Open diagnostic float')
 

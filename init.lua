@@ -3,10 +3,10 @@ require("cmp-config")
 require("autopairs-config")
 require("terminal");
 require("tree")
-
 require("keymaps")
+require("troubles")
 
-require('lsp').setup()
+ require('lsp').setup()
 
 
 vim.diagnostic.config({
@@ -22,7 +22,7 @@ vim.opt.clipboard:append("unnamedplus")
 
 
 vim.opt.number = true
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 vim.opt.signcolumn = "yes"
 vim.opt.cursorline = true
 vim.opt.termguicolors = true
