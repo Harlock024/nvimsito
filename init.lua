@@ -18,7 +18,7 @@ vim.diagnostic.config({
 })
 
 vim.cmd([[colorscheme lackluster-hack]])
-vim.opt.clipboard:append("unnamedplus")
+vim.opt.clipboard = "unnamedplus"
 
 
 vim.opt.number = true
